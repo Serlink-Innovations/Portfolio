@@ -34,8 +34,11 @@ nav#navbar {
   width: 100%;
   background-color: rgba(34, 76, 141, 0.8);
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1em;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.2em;
+  padding-bottom: 1em;
   position: absolute !important;
   z-index: 9999;
   -webkit-animation: moveToRight 0.5s ease-in-out;
@@ -76,11 +79,13 @@ nav#navbar ul#nav a {
   padding: 1em;
   letter-spacing: 0.2em;
   text-decoration: none;
+  transition: all 1s;
+  transform-origin: 50% 50%;
 }
 nav#navbar ul#nav a:hover {
   text-decoration: underline;
   text-underline-offset: 0.3em;
-  text-decoration-thickness: 0.1em;
+  transform: scale(1.2);
 }
 nav#navbar span {
   align-items: center;
@@ -212,6 +217,11 @@ nav#navbar span label {
 }
 .content #content__overlay ul#social a img#social__icon {
   height: inherit;
+  transition: all 1s;
+  transform-origin: 50% 50%;
+}
+.content #content__overlay ul#social a img#social__icon:hover {
+  transform: scale(1.2);
 }
 
 /* Box sizing rules */

@@ -116,6 +116,12 @@
 
                 img#social__icon {
                     height: inherit;
+                    transition: all 1s;
+                    transform-origin: 50% 50%;
+                }
+
+                img#social__icon:hover {
+                    transform: scale(1.2);
                 }
             }
 
