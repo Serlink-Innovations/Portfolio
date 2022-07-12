@@ -49,6 +49,7 @@ nav#navbar ul#nav a {
   font-size: 1.2em;
   font-family: sans-serif;
   padding: 1em;
+  letter-spacing: 0.2em;
   text-decoration: none;
 }
 nav#navbar span {
@@ -66,8 +67,7 @@ nav#navbar span label {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
 }
 
 @media only screen and (max-width: 600px) {
@@ -140,6 +140,9 @@ nav#navbar span label {
      object-position: center center;
 }
 .content #content__overlay label#skill {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: cornflowerblue;
   display: block;
   font-size: 1.2em;
@@ -148,6 +151,9 @@ nav#navbar span label {
   text-align: center;
 }
 .content #content__overlay label#title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: block;
   font-size: 2em;
   font-family: sans-serif;
