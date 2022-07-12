@@ -65,12 +65,14 @@ nav#navbar {
         align-items: center;
         text-align: center;
         display: flex;
+        justify-content: center;
 
         label {
             color: white;
             display: flex;
             font-family: sans-serif;
             width: max-content;
+            font-size: clamp(.5em, 3vw, .9em);
         }
     }
 }

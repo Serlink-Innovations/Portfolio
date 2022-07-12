@@ -59,6 +59,7 @@ nav#navbar span {
   align-items: center;
   text-align: center;
   display: flex;
+  justify-content: center;
 }
 nav#navbar span label {
   color: white;
@@ -67,6 +68,7 @@ nav#navbar span label {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  font-size: clamp(0.5em, 3vw, 0.9em);
 }
 
 .main {
