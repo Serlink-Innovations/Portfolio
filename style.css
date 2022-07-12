@@ -83,6 +83,7 @@ nav#navbar ul#nav a {
   transform-origin: 50% 50%;
 }
 nav#navbar ul#nav a:hover {
+  color: burlywood;
   text-decoration: underline;
   text-underline-offset: 0.3em;
   transform: scale(1.2);
@@ -104,8 +105,10 @@ nav#navbar span label {
 }
 
 .main {
+  width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #224c8d;
 }
 
 @media only screen and (max-width: 600px) {
@@ -181,7 +184,7 @@ nav#navbar span label {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: cornflowerblue;
+  color: burlywood;
   display: block;
   font-size: 1.2em;
   font-family: sans-serif;

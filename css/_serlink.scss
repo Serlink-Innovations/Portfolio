@@ -2,8 +2,10 @@
 @import "components/navigation";
 
 .main {
+    width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #224c8d;
 }
 
 @media only screen and (max-width: 600px) {
@@ -79,7 +81,7 @@
 
         label#skill {
             width: max-content;
-            color: cornflowerblue;
+            color: burlywood;
             display: block;
             font-size: 1.2em;
             font-family: sans-serif;
