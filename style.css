@@ -4,6 +4,7 @@ span#navToggler {
   z-index: 99999;
   padding: 1em;
   color: white;
+  cursor: pointer;
 }
 
 .active {
