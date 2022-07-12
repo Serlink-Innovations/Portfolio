@@ -56,6 +56,12 @@ nav#navbar {
             letter-spacing: .2em;
             text-decoration: none;
         }
+
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: .3em;
+            text-decoration-thickness: .1em;
+        }
     }
 
     span {
