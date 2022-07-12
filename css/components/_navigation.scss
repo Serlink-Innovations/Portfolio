@@ -5,16 +5,23 @@ span#navToggler {
     padding: 1em;
     color: white;
     cursor: pointer;
+    left: 0;
 }
 
 .active {
     display: flex !important;
 }
 
-@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 968px){
-    nav#navbar{
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 968px) {
+
+    span#navToggler {
+        display: none;
+    }
+
+    nav#navbar {
         width: fit-content !important;
-        background-color: #224c8d !important;
+        background-color: transparent !important;
+        display: flex !important;
         position: relative !important;
         animation: none !important;
     }
@@ -29,23 +36,24 @@ nav#navbar {
     flex-direction: column;
     justify-content: space-around;
     padding: 1em;
-    position: absolute;
+    position: absolute !important;
     z-index: 9999;
     animation: moveToRight .5s ease-in-out;
-    animation-delay: 10ms;    
+    animation-delay: 10ms;
 
     @keyframes moveToRight {
-        0%{
+        0% {
             transform: translateX(-100%);
         }
     }
 
     img#logo {
-        max-width: 125px;
+        max-width: fit-content;
         height: auto;
     }
 
     ul#nav {
+        align-items: center;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -64,7 +72,7 @@ nav#navbar {
             text-decoration: none;
         }
 
-        a:hover{
+        a:hover {
             text-decoration: underline;
             text-underline-offset: .3em;
             text-decoration-thickness: .1em;

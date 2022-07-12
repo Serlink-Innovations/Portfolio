@@ -5,6 +5,7 @@ span#navToggler {
   padding: 1em;
   color: white;
   cursor: pointer;
+  left: 0;
 }
 
 .active {
@@ -12,11 +13,15 @@ span#navToggler {
 }
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 968px) {
+  span#navToggler {
+    display: none;
+  }
   nav#navbar {
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
-    background-color: #224c8d !important;
+    background-color: transparent !important;
+    display: flex !important;
     position: relative !important;
     -webkit-animation: none !important;
             animation: none !important;
@@ -31,7 +36,7 @@ nav#navbar {
   flex-direction: column;
   justify-content: space-around;
   padding: 1em;
-  position: absolute;
+  position: absolute !important;
   z-index: 9999;
   -webkit-animation: moveToRight 0.5s ease-in-out;
           animation: moveToRight 0.5s ease-in-out;
@@ -49,10 +54,13 @@ nav#navbar {
   }
 }
 nav#navbar img#logo {
-  max-width: 125px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   height: auto;
 }
 nav#navbar ul#nav {
+  align-items: center;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -92,6 +100,7 @@ nav#navbar span label {
 
 .main {
   display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
