@@ -30,7 +30,7 @@ span#navToggler {
 nav#navbar {
   display: none;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(34, 76, 141, 0.8);
   flex-direction: column;
@@ -151,6 +151,7 @@ nav#navbar span label {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   display: grid;
+  gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
   position: absolute;
