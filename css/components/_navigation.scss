@@ -9,14 +9,6 @@ span#navToggler {
 
 .active {
     display: flex !important;
-    animation: moveToRight .5s ease-in-out;
-    animation-delay: 10ms;    
-
-    @keyframes moveToRight {
-        0%{
-            transform: translateX(-100%);
-        }
-    }
 }
 
 @media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 968px){
@@ -24,6 +16,7 @@ span#navToggler {
         width: fit-content !important;
         background-color: #224c8d !important;
         position: relative !important;
+        animation: none !important;
     }
 }
 
@@ -38,6 +31,14 @@ nav#navbar {
     padding: 1em;
     position: absolute;
     z-index: 9999;
+    animation: moveToRight .5s ease-in-out;
+    animation-delay: 10ms;    
+
+    @keyframes moveToRight {
+        0%{
+            transform: translateX(-100%);
+        }
+    }
 
     img#logo {
         max-width: 125px;
