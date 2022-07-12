@@ -6,6 +6,13 @@
     grid-template-columns: 1fr 3fr;
 }
 
+@media only screen and (max-width) {
+    .content{
+        background-color: gainsboro;
+        display: block;
+    }
+}
+
 .content {
     width: 100vw;
     height: 100vh;
