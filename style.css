@@ -130,7 +130,8 @@ nav#navbar span label {
   height: 60px;
   display: flex;
   padding: 0;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2em;
 }
 .content #content__overlay ul#social li {
   height: inherit;
