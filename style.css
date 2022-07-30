@@ -63,13 +63,28 @@ nav#navbar img#logo {
   height: auto;
 }
 nav#navbar ul#nav {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 nav#navbar ul#nav li {
   display: block;
+}
+nav#navbar ul#nav li.dropdown {
+  position: relative;
+  display: inline-block;
+}
+nav#navbar ul#nav .dropdown-content {
+  display: none;
+}
+nav#navbar ul#nav .dropdown:hover .dropdown-content {
+  display: block !important;
+  padding-left: 2em !important;
+  font-size: 0.8em;
+}
+nav#navbar ul#nav .dropdown:hover .dropdown-content a:hover {
+  transform: none;
 }
 nav#navbar ul#nav a {
   color: white;
