@@ -81,6 +81,8 @@ nav#navbar {
 
             a:hover {
                 transform: none;
+                text-decoration: none;
+                transform: scale(1.1);
             }
         }
 
@@ -100,7 +102,7 @@ nav#navbar {
             color: burlywood;
             text-decoration: underline;
             text-underline-offset: .3em;
-            transform: scale(1.2);
+            //transform: scale(1.2);
         }
     }
 

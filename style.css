@@ -85,6 +85,8 @@ nav#navbar ul#nav .dropdown:hover .dropdown-content {
 }
 nav#navbar ul#nav .dropdown:hover .dropdown-content a:hover {
   transform: none;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 nav#navbar ul#nav a {
   color: white;
@@ -101,7 +103,6 @@ nav#navbar ul#nav a:hover {
   color: burlywood;
   text-decoration: underline;
   text-underline-offset: 0.3em;
-  transform: scale(1.2);
 }
 nav#navbar span {
   align-items: center;
