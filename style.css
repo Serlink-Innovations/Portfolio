@@ -75,22 +75,27 @@ nav#navbar ul#nav li.dropdown {
   position: relative;
   display: inline-block;
 }
+nav#navbar ul#nav li.dropdown #projects-dropdown-btn:hover {
+  cursor: pointer;
+  color: burlywood;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
 nav#navbar ul#nav .dropdown-content {
   display: none;
-}
-nav#navbar ul#nav .dropdown:hover .dropdown-content {
-  display: block !important;
   padding-left: 2em !important;
   font-size: 0.8em;
 }
-nav#navbar ul#nav .dropdown:hover .dropdown-content a:hover {
-  transform: none;
-  text-decoration: none;
-  transform: scale(1.1);
+nav#navbar ul#nav .dropdown-active {
+  display: block !important;
 }
-nav#navbar ul#nav a {
+nav#navbar ul#nav a,
+nav#navbar ul#nav button {
+  align-items: center;
   color: white;
-  display: block;
+  border: none;
+  background-color: transparent;
+  display: flex;
   font-size: 1.2em;
   font-family: sans-serif;
   padding: 1em;
@@ -101,6 +106,7 @@ nav#navbar ul#nav a {
 }
 nav#navbar ul#nav a:hover {
   color: burlywood;
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }

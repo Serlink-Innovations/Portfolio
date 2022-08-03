@@ -9,3 +9,15 @@ function mobile() {
     }
 }
 navToggle.addEventListener('click', mobile);
+
+const dropdown = document.querySelectorAll('.dropdown-content')[0];
+const dropdownBtn = document.querySelectorAll('#projects-dropdown-btn')[0];
+
+function dropdownBtnProject() {
+    if (dropdown.classList.contains('dropdown-active')) {
+        dropdown.classList.remove('dropdown-active')
+    } else {
+        dropdown.classList.add('dropdown-active')
+    }
+}
+dropdownBtn.addEventListener('click', dropdownBtnProject);
