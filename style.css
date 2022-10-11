@@ -420,7 +420,6 @@ html {
 }
 .main .main__sidebar .title {
   display: flex;
-  font-size: 1.5em;
   justify-content: center;
   color: var(--white);
 }
