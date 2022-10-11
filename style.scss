@@ -1,76 +1,80 @@
 @import "css/serlink";
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-template-columns: auto auto;
+    overflow: hidden;
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
+    .main__sidebar {
+        width: auto;
+        height: 100%;
+        background-color: var(--primary);
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
-}
+        .avatar {
+            max-width: 150px;
+            align-items: center;
+            border: .5em solid cornflowerblue;
+            border-radius: 10vmax;
+            display: flex;
+            margin-block: 1em;
+            margin-inline: auto;
+        }
 
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
+        .title {
+            display: flex;
+            font-size: 1.5em;
+            justify-content: center;
+            color: var(--white);
+        }
 
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-}
+        .social {
+            display: block;
+            margin: auto;
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
+            .social__container {
+                display: flex;
+                gap: .5em;
+                padding: 0;
+                margin-inline: 1.5em;
+                justify-content: space-between;
 
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
+                li {
+                    border-radius: 100vmax;
+                    background-color: cornflowerblue;
+                    display: grid;
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+                    a {
+                        display: flex;
+                        padding: .5em;
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
+                        svg {
+                            fill: var(--white);
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+    .main__content {
+        width: inherit;
+        height: inherit;
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            position: absolute;
+            top: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
