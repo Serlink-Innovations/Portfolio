@@ -1,10 +1,24 @@
 @import "css/serlink";
 
+* {
+    font-family: system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+}
+
 .main {
     width: 100%;
     height: 100%;
     display: grid;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-template-columns: auto auto;
     overflow: hidden;
 
@@ -76,5 +90,44 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+/***
+*   Portfolio Customization
+***/
+.page-header {
+    background-color: var(--primary);
+    padding-block: 2em;
+    color: var(--white);
+    display: grid;
+    place-content: center;
+}
+
+#backButton {
+    background-color: cornflowerblue;
+    color: var(--white);
+    display: flex;
+    padding: 1em;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.project-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 1em;
+    place-items: center;
+
+    a {
+        color: var(--black);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: .5em;
+        text-decoration-thickness: .1em;
     }
 }
