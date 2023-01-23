@@ -2,6 +2,28 @@
     display: grid;
     margin: 0;
 
+    @media (max-width: 996px) {
+
+        .nav {
+            place-content: center;
+
+            li>a:hover {
+                transform: scale(1.1);
+                background-color: transparent !important;
+                text-decoration: underline;
+                text-underline-offset: .25rem;
+                text-decoration-thickness: 0.15rem;
+
+                label,
+                svg {
+                    fill: var(--white) !important;
+                    color: var(--white) !important;
+                }
+            }
+        }
+
+    }
+
     .nav {
         display: grid;
         margin: 0;
@@ -10,16 +32,11 @@
         li {
             display: block;
 
-            @media (max-width: 996px) {
-                a {
-                    justify-content: center !important;
-                }
-            }
-
             a {
                 align-items: center;
                 color: var(--white);
-                display: flex;
+                display: grid;
+                grid-template-columns: auto 1fr;
                 font-size: 1em;
                 gap: 1em;
                 text-decoration: none;

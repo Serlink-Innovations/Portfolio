@@ -9,6 +9,23 @@
   display: grid;
   margin: 0;
 }
+@media (max-width: 996px) {
+  .navbar .nav {
+    place-content: center;
+  }
+  .navbar .nav li > a:hover {
+    transform: scale(1.1);
+    background-color: transparent !important;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.15rem;
+  }
+  .navbar .nav li > a:hover label,
+.navbar .nav li > a:hover svg {
+    fill: var(--white) !important;
+    color: var(--white) !important;
+  }
+}
 .navbar .nav {
   display: grid;
   margin: 0;
@@ -17,21 +34,16 @@
 .navbar .nav li {
   display: block;
 }
-@media (max-width: 996px) {
-  .navbar .nav li a {
-    justify-content: center !important;
-  }
-}
 .navbar .nav li a {
   align-items: center;
   color: var(--white);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   font-size: 1em;
   gap: 1em;
   text-decoration: none;
   padding: 1em;
-  /* justify-content: space-between !important; */
-  /* padding-inline: 1.5em; */
+  padding-inline: 1.5em;
 }
 .navbar .nav li a label {
   cursor: pointer;
