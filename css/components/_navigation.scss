@@ -10,6 +10,12 @@
         li {
             display: block;
 
+            @media (max-width: 996px) {
+                a {
+                    justify-content: center !important;
+                }
+            }
+
             a {
                 align-items: center;
                 color: var(--white);
